@@ -23,4 +23,8 @@ public class Department {
     @OneToMany(cascade = CascadeType.ALL, orphanRemoval = true, fetch = FetchType.EAGER)
     @JoinColumn(name = "course_id")
     private List<Course> courses;
+
+    @OneToMany(cascade = CascadeType.ALL, orphanRemoval = true, fetch = FetchType.EAGER)
+    @JoinColumn(name = "instructor_id")
+    private List<Instructor> instructor;
 }

@@ -29,4 +29,14 @@ public class StudentServiceImpl implements StudentService {
     public Optional<Student> getStudentById(Long id) {
         return studentRepository.findById(id);
     }
+
+    @Override
+    public void delete(Long id) {
+
+    }
+
+    @Override
+    public Student update(Student student) {
+        return null;
+    }
 }
